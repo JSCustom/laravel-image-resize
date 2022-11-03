@@ -11,6 +11,7 @@ return [
         'portrait',
         'landscape'
     ],
+    'save_folder' => 'temp',
     'middleware' => ['api']
 ];
 ?>

@@ -1,0 +1,35 @@
+{
+    "name": "jscustom/laravel-image-resize",
+    "description": "Laravel package for resizing images. Supports PNG, JPG, JPEG, GIF.",
+    "type": "library",
+    "require": {
+        "php": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0 || ^6.0 || ^7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "JSCustom\\LaravelImageResize\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jediael Saliba",
+            "email": "developer.jeddsaliba@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JSCustom\\LaravelImageResize\\Providers\\LaravelImageResizeServiceProvider"
+            ],
+            "aliases": {
+                "Qbo": "JSCustom\\LaravelImageResize\\Facade"
+            }
+        }
+    }
+}

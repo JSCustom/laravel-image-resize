@@ -1,6 +1,6 @@
 <?php
 
-namespace JSCustom\LaravelImageResize\Helpers;
+namespace JSCustom\ImageResize\Helpers;
 # Requires : Requires PHP5, GD library. #
 class ImageResize
 {

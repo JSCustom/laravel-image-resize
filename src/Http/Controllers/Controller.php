@@ -1,15 +1,15 @@
 <?php
 
-namespace JSCustom\LaravelImageResize\Http\Controllers;
+namespace JSCustom\ImageResize\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
-use JSCustom\LaravelImageResize\Helpers\ImageResize;
+use JSCustom\ImageResize\Helpers\ImageResize;
 
 class Controller extends BaseController
 {
     public function __construct(
-        \JSCustom\LaravelImageResize\Services\LaravelImageResizeService $LaravelImageResizeService
+        \JSCustom\ImageResize\Services\ImageResizeService $ImageResizeService
     ) {
-        $this->_laravelImageResizeService = $LaravelImageResizeService;
+        $this->_imageResizeService = $ImageResizeService;
     }
 }

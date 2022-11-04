@@ -1,14 +1,14 @@
 <?php
 
-namespace JSCustom\LaravelImageResize\Services;
+namespace JSCustom\ImageResize\Services;
 
-use JSCustom\LaravelImageResize\Providers\HttpServiceProvider;
-use JSCustom\LaravelImageResize\Helpers\ImageResize;
+use JSCustom\ImageResize\Providers\HttpServiceProvider;
+use JSCustom\ImageResize\Helpers\ImageResize;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Collection;
 use Exception;
 
-class LaravelImageResizeService
+class ImageResizeService
 {
     public function imageResize($request)
     {

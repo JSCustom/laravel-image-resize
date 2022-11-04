@@ -1,11 +1,11 @@
 <?php
 
-namespace JSCustom\LaravelImageResize\Providers;
+namespace JSCustom\ImageResize\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
-class LaravelImageResizeServiceProvider extends ServiceProvider
+class ImageResizeServiceProvider extends ServiceProvider
 {
     public function boot()
     {

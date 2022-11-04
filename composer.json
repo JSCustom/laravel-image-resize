@@ -12,7 +12,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "JSCustom\\LaravelImageResize\\": "src/"
+            "JSCustom\\ImageResize\\": "src/"
         }
     },
     "authors": [
@@ -25,10 +25,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JSCustom\\LaravelImageResize\\Providers\\LaravelImageResizeServiceProvider"
+                "JSCustom\\ImageResize\\Providers\\ImageResizeServiceProvider"
             ],
             "aliases": {
-                "Qbo": "JSCustom\\LaravelImageResize\\Facade"
+                "Qbo": "JSCustom\\ImageResize\\Facade"
             }
         }
     }

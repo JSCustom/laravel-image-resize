@@ -1,6 +1,6 @@
 <?php
 
-namespace JSCustom\LaravelImageResize\Providers;
+namespace JSCustom\ImageResize\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

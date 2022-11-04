@@ -1,10 +1,10 @@
 <?php
 
-namespace JSCustom\LaravelImageResize\Facades;
+namespace JSCustom\ImageResize\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class LaravelImageResize extends Facade
+class ImageResize extends Facade
 {
     protected static function getFacadeAccessor()
     {

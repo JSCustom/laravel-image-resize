@@ -7,5 +7,9 @@ use JSCustom\LaravelImageResize\Helpers\ImageResize;
 
 class Controller extends BaseController
 {
-    public function __construct() {}
+    public function __construct(
+        \JSCustom\LaravelImageResize\Services\LaravelImageResizeService $LaravelImageResizeService
+    ) {
+        $this->_laravelImageResizeService = $LaravelImageResizeService;
+    }
 }

@@ -18,6 +18,7 @@ class HttpServiceProvider extends ServiceProvider
 
     CONST OK = 200;
     CONST CREATED = 201;
+    CONST CREATED_MESSAGE = 'Image has been created.';
     /* CONST NO_CONTENT = 204; */
 
     CONST GENERAL_SERVER_ERROR = 500; /* IF API FAILED TO RUN (CREATE, READ, UPDATE, DELETE) */

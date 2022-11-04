@@ -4,6 +4,7 @@ namespace JSCustom\LaravelImageResize\Services;
 
 use JSCustom\LaravelImageResize\Providers\HttpServiceProvider;
 use JSCustom\LaravelImageResize\Helpers\ImageResize;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Collection;
 use Exception;
 
@@ -24,6 +25,9 @@ class LaravelImageResizeService
                 $image = new ImageResize($_FILES['image'], true);
                 $image->resizeImage($width, $height, $option);
                 $newImageName = rand(111, 999) . time() . '_' . $request->file('image')->getClientOriginalName();
+                if (!Storage::exists(config('image-resize.save_folder'))) {
+                    Storage::makeDirectory(config('image-resize.save_folder'));
+                }
                 $image->saveImage(config('image-resize.save_folder') .'/'. $newImageName, $quality);
                 return (object) [
                     'code' => HttpServiceProvider::CREATED,

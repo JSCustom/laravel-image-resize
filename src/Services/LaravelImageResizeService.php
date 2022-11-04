@@ -4,7 +4,7 @@ namespace JSCustom\LaravelImageResize\Services;
 
 use JSCustom\LaravelImageResize\Providers\HttpServiceProvider;
 use JSCustom\LaravelImageResize\Helpers\ImageResize;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Collection;
 use Exception;
 
@@ -25,15 +25,13 @@ class LaravelImageResizeService
                 $image = new ImageResize($_FILES['image'], true);
                 $image->resizeImage($width, $height, $option);
                 $newImageName = rand(111, 999) . time() . '_' . $request->file('image')->getClientOriginalName();
-                if (!Storage::exists(config('image-resize.save_folder'))) {
-                    Storage::makeDirectory(config('image-resize.save_folder'));
-                }
-                $image->saveImage(config('image-resize.save_folder') .'/'. $newImageName, $quality);
+                File::ensureDirectoryExists(public_path(config('image-resize.save_folder')));
+                $image->saveImage(public_path(config('image-resize.save_folder') .'/'. $newImageName), $quality);
                 return (object) [
                     'code' => HttpServiceProvider::CREATED,
-                    'message' => HttpServiceProvider::CREATED_MESSAGE . ' Please see ' . config('image-resize.save_folder') .'/'. $newImageName,
+                    'message' => HttpServiceProvider::CREATED_MESSAGE . ' Please see ' . public_path(config('image-resize.save_folder') .'/'. $newImageName),
                     'status' => true,
-                    'image' => config('image-resize.save_folder') .'/'. $newImageName
+                    'image' => public_path(config('image-resize.save_folder') .'/'. $newImageName)
                 ];
             } catch (Exception $e) {
                 return (object) [

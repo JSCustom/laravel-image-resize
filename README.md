@@ -50,7 +50,7 @@ Features
 **Service**
 
 ```bash
-\use JSCustom\ImageResize\Services\ImageResizeService
+JSCustom\ImageResize\Services\ImageResizeService
 ```
 
 <a name="sample-image-resize-api"></a>

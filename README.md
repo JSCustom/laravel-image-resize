@@ -107,19 +107,19 @@ POST
 }
 ```
 
-<a name="how-to-implement-image-resize-helper"></a>
-## How To Implement Image Resize Helper
+<a name="how-to-implement-image-resize-service"></a>
+## How To Implement Image Resize Service
 
-**Add the helper to your controller**
+**Add the service to your controller**
 
 ```bash
-use JSCustom\ImageResize\Helpers\ImageResize;
+use JSCustom\ImageResize\Services\ImageResizeService;
 ```
 
 **In your controller, follow this code structure**
 
 ```bash
-$image = ImageResize::imageResize($request);
+$image = ImageResizeService::imageResize($request);
 ```
 
 **Or initiate in the construct of your controller**

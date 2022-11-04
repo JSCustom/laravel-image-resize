@@ -27,18 +27,24 @@ class LaravelImageResizeService
                 $image->saveImage(config('image-resize.save_folder') .'/'. $newImageName, $quality);
                 return (object) [
                     'code' => HttpServiceProvider::CREATED,
-                    'message' => HttpServiceProvider::CREATED_MESSAGE . ' Please see ' . config('image-resize.save_folder') .'/'. $newImageName
+                    'message' => HttpServiceProvider::CREATED_MESSAGE . ' Please see ' . config('image-resize.save_folder') .'/'. $newImageName,
+                    'status' => true,
+                    'image' => config('image-resize.save_folder') .'/'. $newImageName
                 ];
             } catch (Exception $e) {
                 return (object) [
                     'code' => HttpServiceProvider::BAD_REQUEST,
-                    'message' => $e->getMessage()
+                    'message' => $e->getMessage(),
+                    'status' => false,
+                    'image' => null
                 ];
             }
         } else {
             return (object) [
                 'code' => HttpServiceProvider::BAD_REQUEST,
-                'message' => HttpServiceProvider::BAD_REQUEST_MESSAGE
+                'message' => HttpServiceProvider::BAD_REQUEST_MESSAGE,
+                'status' => false,
+                'image' => null
             ];
         }
     }

@@ -109,7 +109,7 @@ POST
 ```
 
 <a name="how-to-implement-image-resize-helper"></a>
-### How To Implement Image Resize Helper
+## How To Implement Image Resize Helper
 
 **Add the helper to your controller**
 

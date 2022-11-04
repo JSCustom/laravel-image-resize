@@ -55,7 +55,7 @@ Download the Postman API Collection [here](https://minhaskamal.github.io/DownGit
 ```
 
 <a name="sample-image-resize-api"></a>
-### Sample Image Resize API
+## Sample Image Resize API
 
 **Controller**
 

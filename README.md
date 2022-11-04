@@ -10,7 +10,7 @@ Laravel package for user management. Includes user, user profile and user role.
 [Download Postman API](#download-postman-api)<br>
 [Image Resize](#image-resize)<br>
 [Sample Image Resize API](#sample-image-resize-api)<br>
-[How To Implement Image Resize Helper](#how-to-implement-image-resize-helper)<br>
+[How To Implement Image Resize Service](#how-to-implement-image-resize-service)<br>
 [Support](#support)
 
 <a name="getting-started"></a>
@@ -47,10 +47,10 @@ Features
 - Crop
 - Change Quality
 
-**Helper**
+**Service**
 
 ```bash
-\JSCustom\ImageResize\Helpers\ImageResize
+\use JSCustom\ImageResize\Services\ImageResizeService
 ```
 
 <a name="sample-image-resize-api"></a>

@@ -7,7 +7,7 @@ use JSCustom\LaravelImageResize\Helpers\ImageResize;
 use Illuminate\Support\Collection;
 use Exception;
 
-class ImageResizeService
+class LaravelImageResizeService
 {
     public function imageResize($request)
     {

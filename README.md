@@ -59,7 +59,7 @@ JSCustom\ImageResize\Services\ImageResizeService
 **Controller**
 
 ```bash
-\JSCustom\ImageResize\Http\Controllers\ImageResize\ImageResizeController
+JSCustom\ImageResize\Http\Controllers\ImageResize\ImageResizeController
 ```
 
 **URL**

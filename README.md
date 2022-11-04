@@ -42,8 +42,7 @@ Download the Postman API Collection [here](https://minhaskamal.github.io/DownGit
 <a name="image-resize"></a>
 ### Image Resize
 
-**Features**
-
+Features
 - Resize
 - Crop
 - Change Quality

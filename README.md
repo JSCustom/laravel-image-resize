@@ -140,4 +140,4 @@ $image = $this->_imageResizeService->imageResize($request);
 
 <a name="support"></a>
 ### Support
-For support, email developer.jeddsaliba@gmail.com."# laravel-image-resize" 
+For support, email developer.jeddsaliba@gmail.com.

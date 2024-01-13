@@ -37,7 +37,7 @@ php artisan vendor:publish --provider="JSCustom\ImageResize\Providers\ImageResiz
 <a name="download-postman-api"></a>
 ### Download Postman API
 
-Download the Postman API Collection [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/JSCustom/laravel-user-management/blob/master/src/assets/postman/Laravel_User_Management.postman_collection.json).
+Download the Postman API Collection [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/JSCustom/laravel-image-resize/blob/master/src/assets/postman/Laravel_Image_Resize.postman_collection.json).
 
 <a name="image-resize"></a>
 ### Image Resize

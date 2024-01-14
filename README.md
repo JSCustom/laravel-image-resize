@@ -144,7 +144,7 @@ $image = $this->_imageResizeService->imageResize($request);
 
 **GD error(s)**
 
-For PHP8.0 use (php8.1-gd are also available):
+For PHP8.0 use (php8.1-gd and php8.2-gd are also available):
 ```bash
 sudo apt-get install php8.0-gd
 ```

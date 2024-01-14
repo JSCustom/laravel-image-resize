@@ -11,6 +11,7 @@ Laravel package for user management. Includes user, user profile and user role.
 [Image Resize](#image-resize)<br>
 [Sample Image Resize API](#sample-image-resize-api)<br>
 [How To Implement Image Resize Service](#how-to-implement-image-resize-service)<br>
+[Common Issues Encountered](#common-issues-encountered)<br>
 [Support](#support)
 
 <a name="getting-started"></a>
@@ -136,6 +137,20 @@ public function __construct(
 
 ```bash
 $image = $this->_imageResizeService->imageResize($request);
+```
+
+<a name="common-issues-encountered"></a>
+### Common Issues Encountered
+**GD error(s)**
+
+For PHP8 use (php8.1-gd are also available):
+```bash
+sudo apt-get install php8.0-gd
+```
+
+For PHP7.0 use (php7.1-gd, php7.2-gd, php7.3-gd and php7.4-gd are also available):
+```bash
+sudo apt-get install php7.0-gd
 ```
 
 <a name="support"></a>

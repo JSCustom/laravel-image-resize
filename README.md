@@ -140,7 +140,8 @@ $image = $this->_imageResizeService->imageResize($request);
 ```
 
 <a name="common-issues-encountered"></a>
-### Common Issues Encountered
+## Common Issues Encountered
+
 **GD error(s)**
 
 For PHP8 use (php8.1-gd are also available):
@@ -154,5 +155,5 @@ sudo apt-get install php7.0-gd
 ```
 
 <a name="support"></a>
-### Support
+## Support
 For support, email developer.jeddsaliba@gmail.com.

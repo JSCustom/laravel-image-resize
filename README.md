@@ -1,6 +1,6 @@
 
 # Laravel User Management API
-Laravel package for user management. Includes user, user profile and user role.
+Laravel package for resizing images. Supports PNG, JPG, JPEG, GIF.
 
 ## Table of Contents
 
